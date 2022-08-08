@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="browse.css" />
+    <link rel="stylesheet" href="general.css" />
+    <script src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="nav">
+        <figure class="nav__logo">
+          <img src="./assets/logo-white.png" class="nav__logo--img" alt="" />
+        </figure>
+        <div class="nav__links">
+          <div class="nav__links--wrapper">
+            <a href="index.html" class="nav__link link__hover">Home</a>
+            <a href="browse.html" class="nav__link link__hover">Find Movies</a>
+            <button class="btn nav__btn btn__active" onclick="error(event)">
+              <a href="" class="btn__link">CONTACT</a>
+            </button>
+          </div>
+          <button class="btn__menu btn__menu--open" onclick="menuOpen()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="menuClose()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul>
+              <li class="menu__list">
+                <a class="menu__link" href="index.html">Home</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="browse.html">Find Movies</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#" onclick="error()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section id="searchbar">
+        <div class="row">
+          <div class="search__wrapper">
+            <h1 class="search__title">Browse our movies</h1>
+            <form class="search__bar" action="">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="Search by Title"
+                id="searchBar"
+                autocomplete="off"
+                
+              />
+              <div class="search__icon--wrapper">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="backdrop"></div>
+      </section>
+    </div>
+    <section id="results">
+      <div class="bar"><div class="bar__loading"></div></div>
+      <div class="blob1"><img src="./assets/blob1.svg" alt=""></div>
+      <div class="blob2"><img src="./assets/blob2.svg" alt=""></div>
+      <div class="row">
+        <div class="movies__wrapper">
+          <div class="search__results">
+            <h1 class="search__results--title">Search Results:</h1>
+          </div>
+          <figure id="search__result--img-wrapper">
+            <img src="./assets/undraw_web_search_re_efla.svg" class="search__result--img" alt="">
+            <span class="search__results--text">Try being more specific</span>
+          </figure>
+          <ul class="movies"></ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

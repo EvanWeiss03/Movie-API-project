@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blinker</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <figure class="nav__logo">
+          <img src="./assets/logo.png" class="nav__logo--img" alt="" />
+        </figure>
+        <div class="nav__links">
+          <div class="nav__links--wrapper">
+            <a href="index.html" class="nav__link purple link__hover">Home</a>
+            <a href="browse.html" class="nav__link link__hover">Find Movies</a>
+            <button class="btn nav__btn btn__active" onclick="error(event)">
+              <a href="" class="btn__link">CONTACT</a>
+            </button>
+          </div>
+          <button class="btn__menu btn__menu--open" onclick="menuOpen()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="menuClose()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul>
+              <li class="menu__list">
+                <a class="menu__link" href="index.html">Home</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="browse.html">Find Movies</a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link" href="#" onclick="error()">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="body">
+      <div class="row">
+        <div class="body__content">
+          <h1 class="body__title purple">
+            America's most awarded movie subscription platform
+          </h1>
+          <h2 class="body__sub-title">
+            FIND GREAT MOVIES WITH <span class="purple">BLINKER</span>
+          </h2>
+          <form class="search__wrapper">
+            <input
+              class="searchbar"
+              type="text"
+              placeholder="Search by Title"
+              id="searchBar"
+              autocomplete="off"
+            />
+            <button type="button" class="search__btn btn__active" onclick="searchButton()">
+              <svg
+                data-v-2a11e7ca=""
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="search"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="searchbar__icon"
+                
+              >
+                <path
+                  data-v-2a11e7ca=""
+                  fill="currentColor"
+                  d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  class=""
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <img class="img1" src="./assets/im1.svg" alt="" />
+      </div>
+    </section>
+  </body>
+</html>
