@@ -33,7 +33,7 @@ searchBar.addEventListener('keyup', (e) => {
 })
 
 async function main(searchString) {
-    const movie = await fetch(`https://www.omdbapi.com/?apikey=1a34ac4f&s=${searchString}`);
+    const movie = await fetch(`http://www.omdbapi.com/?apikey=1a34ac4f&s=${searchString}`);
     const movieInfo = await movie.json()
     if (movieInfo.Search == null) {
         document.getElementById('search__result--img-wrapper').style.display = "flex"

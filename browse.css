@@ -177,6 +177,7 @@ SEARCH
   height: 100%;
   max-height: 350px;
   transition: 300ms ease;
+  border-radius: 8px;
 }
 
 .movie:hover {
