@@ -43,6 +43,7 @@ body {
 
 .search__wrapper {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 700px;
@@ -50,23 +51,9 @@ body {
   margin-bottom: 24px;
 }
 
-.searchbar {
-  background-color: #fff;
-  border-radius: 20px;
-  border: 1px solid #0a1f44;
-  color: #0a1f44;
-  height: 50px;
-  line-height: 40px;
-  outline: none;
-  padding: 0 15px;
-  width: 100%;
-  font-size: 24px;
-  padding-left: 25px;
-  height: 70px;
-}
 
 .search__btn {
-  width: 200px;
+  width: 150px;
   background-color: #6030b1;
   border: none;
   border-radius: 20px;
