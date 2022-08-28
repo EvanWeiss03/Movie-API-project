@@ -60,9 +60,10 @@ body {
   box-shadow: 7px 7px 14px rgb(134 93 204 / 30%);
   cursor: pointer;
   padding: 12px 0;
-  margin-left: 20px;
   transition: 300ms ease;
   height: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .search__btn:hover {
